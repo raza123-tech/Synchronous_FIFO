@@ -82,25 +82,7 @@ The provided testbench (`tb.v`) verifies the FIFO through the following tasks:
 | `tc_underflow`               | Detects and reports underflow attempts.              |
 | `tc_reset`                   | Validates FIFO behavior after reset.                 |
 
----
 
-## ▶ Simulation Instructions
-
-1. **Using Icarus Verilog**:
-
-   ```bash
-   iverilog -o fifo_sim sync_fifo.v tb.v
-   vvp fifo_sim
-   gtkwave tb.vcd
-   ```
-
-2. **Using ModelSim/Questa**:
-
-   ```tcl
-   vlog sync_fifo.v tb.v
-   vsim tb
-   run -all
-   ```
 
 ---
 
