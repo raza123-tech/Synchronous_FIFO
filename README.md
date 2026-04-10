@@ -1,6 +1,6 @@
 # Synchronous FIFO in Verilog
 
-## 📌 Overview
+##  Overview
 
 This project implements a **synchronous FIFO (First-In-First-Out)** memory buffer using Verilog. The FIFO operates on a single clock domain and supports parameterizable depth and data width.
 A detailed testbench is provided to verify various functional scenarios such as read, write, overflow, underflow, wraparound, and simultaneous read/write operations.
@@ -29,7 +29,7 @@ A detailed testbench is provided to verify various functional scenarios such as 
 
 ---
 
-## 🖥 Design Details
+## Design Details
 
 ### Parameters
 
@@ -56,7 +56,7 @@ A detailed testbench is provided to verify various functional scenarios such as 
 
 ---
 
-## 🔍 Functional Description
+##  Functional Description
 
 * **Write Operation**: Data is stored at `wr_ptr` location if `wr_en` is high and FIFO is not full.
 * **Read Operation**: Data from `rd_ptr` is output to `dout` if `rd_en` is high and FIFO is not empty.
@@ -66,7 +66,7 @@ A detailed testbench is provided to verify various functional scenarios such as 
 
 ---
 
-## 🧪 Testbench Details
+##  Testbench Details
 
 The provided testbench (`tb.v`) verifies the FIFO through the following tasks:
 
@@ -86,7 +86,7 @@ The provided testbench (`tb.v`) verifies the FIFO through the following tasks:
 
 ---
 
-## 📊 Expected Output
+##  Expected Output
 
 The simulation should display PASS/ERROR messages for each test case.
 Flags (`full`/`empty`) and data values should match expected behavior across all scenarios.
